@@ -1,23 +1,25 @@
 .card {
-  height: 300px;
+  height: 310px;
   width: 330px;
-  /* border: 1.5px solid #52cc57; */
   border-radius: 10px;
   background-color: rgb(236, 236, 236);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin: 20px;
 }
 
 .img_item {
   height: 240px !important;
   width: 330px !important;
   border-radius: 10px 10px 0px 0px !important;
+  object-fit: cover;
 }
 
 .item_des {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  margin: 0px 10px;
+  margin-top: 18px;
 }
 
 .item_name {
@@ -25,5 +27,5 @@
 }
 
 .item_price {
-  color: red;
+  color: #ffd130;
 }
