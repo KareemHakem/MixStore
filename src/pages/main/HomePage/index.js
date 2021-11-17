@@ -6,6 +6,9 @@ import Loading from "../../../commons/Loading/index";
 import Error from "../../../commons/Error/index";
 import Card from "../../../components/Card/index";
 import { useHistory } from "react-router";
+import NavBar from "../../../components/NavBar";
+import Footer from "../../../components/Footer";
+import { COLORS } from "../../../styles/colors";
 
 export function HomePage() {
   const [loading, setLoading] = useState(false);
@@ -27,18 +30,22 @@ export function HomePage() {
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <Loading />;
+  if (loading) return <Loading color={COLORS.lightWithe} />;
   if (error) return <Error />;
 
   return (
-    <div className="HomePage">
-      {products.map((product) => (
-        <Card
-          key={product._id}
-          item={product}
-          handleNavigate={handleNavigate}
-        />
-      ))}
+    <div>
+      <NavBar />
+      <div className="HomePage">
+        {products.map((product) => (
+          <Card
+            key={product._id}
+            item={product}
+            handleNavigate={handleNavigate}
+          />
+        ))}
+      </div>
+      <Footer />
     </div>
   );
 }

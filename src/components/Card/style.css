@@ -2,8 +2,8 @@
   height: 310px;
   width: 330px;
   border-radius: 10px;
-  background-color: rgb(236, 236, 236);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.336) 0px 4px 12px;
   margin: 20px;
 }
 
@@ -23,9 +23,17 @@
 }
 
 .item_name {
-  color: #52cc57;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
 }
 
 .item_price {
-  color: #ffd130;
+  font-family: 'Raleway', sans-serif;
+  color: #e0a400;
 }
+
+/* 
+font-family: 'Montagu Slab', serif;
+font-family: 'Praise', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto Condensed', sans-serif; */

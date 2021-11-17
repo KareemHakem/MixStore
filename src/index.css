@@ -10,6 +10,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: linear-gradient(
+    to right,
+    #F2AA61,
+    #fee5e0,
+    #fed5d1,
+    #fed5d1,
+    #f0b3b2,
+    #ccede4,
+    #ccede4
+  );
+
+  /* background-image: linear-gradient(
+    to right,
+    #fcff30,
+    #5eb3c9,
+    #18b5d9,
+    #88c7e0,
+    #3551eed3
+  ); */
+
+  /* background-image: linear-gradient(
+    direction,
+    color- #feb100,
+    color- #b34202,
+    color- #0035e9
+  ); */
 }
 
 code {
