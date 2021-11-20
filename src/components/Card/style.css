@@ -1,4 +1,4 @@
-.card {
+.card_home_page {
   height: 310px;
   width: 330px;
   border-radius: 10px;
@@ -7,14 +7,14 @@
   margin: 20px;
 }
 
-.img_item {
+.img_item_home_page {
   height: 240px !important;
   width: 330px !important;
   border-radius: 10px 10px 0px 0px !important;
   object-fit: cover;
 }
 
-.item_des {
+.item_des_home_page {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,12 +22,12 @@
   margin-top: 18px;
 }
 
-.item_name {
+.item_name_home_page  {
   color: #000000;
   font-family: 'Raleway', sans-serif;
 }
 
-.item_price {
+.item_price_home_page  {
   font-family: 'Raleway', sans-serif;
   color: #e0a400;
 }

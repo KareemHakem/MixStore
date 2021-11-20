@@ -5,3 +5,8 @@ export const fetchProducts = async () => {
   const { data } = await axios.get(endpoint.products);
   return data;
 };
+
+export const fetchProduct = async (id) => {
+  const { data } = await axios.get(`${endpoint.products}/${id}`);
+  return data;
+};

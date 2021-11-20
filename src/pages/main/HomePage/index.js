@@ -1,14 +1,14 @@
 import React from "react";
-import "./style.css";
 import { useEffect, useState } from "react";
-import { fetchProducts } from "../../../api/requests/Products/index";
-import Loading from "../../../commons/Loading/index";
-import Error from "../../../commons/Error/index";
-import Card from "../../../components/Card/index";
 import { useHistory } from "react-router";
+import { fetchProducts } from "../../../api/requests/Products";
+import Loading from "../../../commons/Loading";
+import Error from "../../../commons/Error";
+import Card from "../../../components/Card";
 import NavBar from "../../../components/NavBar";
 import Footer from "../../../components/Footer";
 import { COLORS } from "../../../styles/colors";
+import "./style.css";
 
 export function HomePage() {
   const [loading, setLoading] = useState(false);
@@ -30,7 +30,7 @@ export function HomePage() {
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <Loading color={COLORS.lightWithe} />;
+  if (loading) return <Loading visible={loading} color={COLORS.lightWithe} />;
   if (error) return <Error />;
 
   return (

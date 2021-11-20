@@ -1,17 +1,20 @@
 .input_container {
   padding: 10px;
   width: 400px;
-  border-radius: 20px;
+  border-radius: 19px;
   background-color: rgb(236, 236, 236);
   display: flex;
 }
 
-
-
 .input {
   background-color: transparent;
+  color: black;
   width: 60%;
   margin-left: 10px;
   outline: none;
   border: none;
+}
+
+.input ::placeholder {
+  color: black !important;
 }

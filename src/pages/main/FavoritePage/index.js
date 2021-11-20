@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-export default function FavoritePage() {
+export  function FavoritePage() {
   return (
     <div>
       <h1> FavoritePage </h1>

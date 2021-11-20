@@ -1,7 +1,6 @@
 import React from "react";
-import "./style.css";
-import Image from "../../assets/images/logo_2.png";
 import { Link } from "react-router-dom";
+import Image from "../../assets/images/logo_2.png";
 import Avatar from "@mui/material/Avatar";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -29,12 +28,12 @@ export default function NavBar() {
               {" "}
               Register
             </Link>
-            <Link className="link" to="/cart page">
+            <Link className="link" to="/cart">
               <Avatar className="avatar">
                 <AddShoppingCartIcon />
               </Avatar>
             </Link>
-            <Link className="link" to="/favorite page">
+            <Link className="link" to="/favorite">
               <Avatar className="avatar">
                 <FavoriteBorderIcon />
               </Avatar>

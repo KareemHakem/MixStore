@@ -1,5 +1,6 @@
+import { color } from "@mui/system";
 import React from "react";
-import "./style.css"
+import "./style.css";
 
 export default function Input({
   height,
@@ -9,9 +10,16 @@ export default function Input({
   type,
   value,
   Icon,
+  backgroundColor: color,
+  border,
+  borderRadius,
+  margin
 }) {
   return (
-    <div className="input_container" style={{ height, width }}>
+    <div
+      className="input_container"
+      style={{ backgroundColor: color, height, width, border, borderRadius, margin }}
+    >
       {Icon && <Icon />}
       <input
         value={value}

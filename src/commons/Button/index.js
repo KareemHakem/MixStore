@@ -8,13 +8,27 @@ export default function Button({
   color = COLORS.primary,
   height,
   width,
+  marginTop,
+  margin,
+  marginLeft,
+  marginRight,
+  marginBottom,
 }) {
   return (
     <button
       onClick={onClick}
       text={text}
       className="main-button"
-      style={{ backgroundColor: color, width, height }}
+      style={{
+        backgroundColor: color,
+        width,
+        height,
+        marginTop,
+        margin,
+        marginLeft,
+        marginRight,
+        marginBottom,
+      }}
     >
       {text}
     </button>
