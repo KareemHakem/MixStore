@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { fetchProduct } from "../../../api/requests/Products";
 import { useParams } from "react-router";
+import { COLORS } from "../../../styles/colors";
 import Loading from "../../../commons/Loading";
 import Error from "../../../commons/Error";
 import ProductCard from "../../../components/ProductCard";
-import { COLORS } from "../../../styles/colors";
+
 
 export function ProductDetailPage() {
   const [loading, setLoading] = useState(false);

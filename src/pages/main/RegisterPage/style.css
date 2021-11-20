@@ -1,3 +1,14 @@
+.register_page{
+margin-top: 60px;
+}
+
+.flex_regis_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .text_regis_page {
   margin-bottom: 20px;
 }
@@ -7,7 +18,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 130px;
+  margin-top: 50px;
+  margin-right: 50px;
   font-family: "Dancing Script", cursive;
 }
 
@@ -22,4 +34,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.img_regis_page_flex {
+  height: 450px;
+  width: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.233) 0px 4px 12px;
+  margin-top: 40px;
 }

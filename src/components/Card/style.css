@@ -22,13 +22,15 @@
   margin-top: 18px;
 }
 
-.item_name_home_page  {
+.item_name_home_page {
   color: #000000;
-  font-family: 'Raleway', sans-serif;
+  font-size: x-large;
+  font-family: "Dancing Script", cursive;
 }
 
-.item_price_home_page  {
-  font-family: 'Raleway', sans-serif;
+.item_price_home_page {
+  font-size: x-large;
+  font-family: "Dancing Script", cursive;
   color: #e0a400;
 }
 

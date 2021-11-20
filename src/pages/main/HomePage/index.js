@@ -2,12 +2,12 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { fetchProducts } from "../../../api/requests/Products";
+import { COLORS } from "../../../styles/colors";
 import Loading from "../../../commons/Loading";
 import Error from "../../../commons/Error";
 import Card from "../../../components/Card";
-import NavBar from "../../../components/NavBar";
-import Footer from "../../../components/Footer";
-import { COLORS } from "../../../styles/colors";
+// import NavBar from "../../../components/NavBar";
+// import Footer from "../../../components/Footer";
 import "./style.css";
 
 export function HomePage() {
@@ -35,7 +35,7 @@ export function HomePage() {
 
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className="HomePage">
         {products.map((product) => (
           <Card
@@ -45,7 +45,7 @@ export function HomePage() {
           />
         ))}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

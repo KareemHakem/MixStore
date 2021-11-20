@@ -1,11 +1,15 @@
 import "./App.css";
 import Navigation from "./Navigation";
-// import SwiperPage from "./pages/main/Swiper";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+
+
 function App() {
   return (
     <div>
+      <NavBar />
       <Navigation />
-      {/* <SwiperPage /> */}
+      <Footer />
     </div>
   );
 }

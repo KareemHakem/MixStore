@@ -1,24 +1,29 @@
 .Page_desc_height {
-  height: 137vh;
+  height: 110vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 50px;
 }
 
 .card_item_desc {
-  height: 132vh;
-  width: 80%;
   font-family: "Dancing Script", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 10%;
-  margin-top: 20px;
 }
 
 .img_item_desc {
-  height: 550px;
-  width: 400px;
-  border-radius: 30px !important ;
+  height: 500px;
+  width: 500px;
+  border-radius: 25px !important ;
   object-fit: cover;
+  margin-left: 100px;
+  box-shadow: rgba(0, 0, 0, 0.288) 0px 4px 12px;
 }
 
 .name_likes_part_item_desc {
@@ -29,11 +34,10 @@
 }
 
 .likes_item_desc {
-  margin-left: 300px !important;
+  margin-left: 200px !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 .like_icon_desc {
@@ -46,8 +50,8 @@
 
 .desc_item_desc {
   margin-top: 25px;
-  font-size: 20px;
-  font-weight: bolder;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .btn_item_desc {
