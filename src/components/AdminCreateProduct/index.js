@@ -3,7 +3,6 @@ import { Formik, Form } from "formik";
 import { FormInput } from "../Form/FormInputs";
 import { validationCreateProductsSchema as validationSchema } from "../../utils/validationSchema";
 import Button from "../../commons/Button";
-
 import "./style.css";
 
 const AdminCreateProduct = ({ handleCreateProductsSubmit }) => {

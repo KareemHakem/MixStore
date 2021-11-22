@@ -23,3 +23,11 @@ export const validationCreateProductsSchema = Yup.object().shape({
   image: Yup.string().required().label("Image"),
   cal: Yup.string().required().label("Cal"),
 });
+
+export const validationAddAddressUserSchema = Yup.object().shape({
+  email: Yup.string().required().email().label("Email"),
+  phoneNumber: Yup.string().required().max(11).label("Phone Number"),
+  address: Yup.string().required().label("Address"),
+  city: Yup.string().required().label("City"),
+  zipCode: Yup.string().required().max(6).label("Zip Code"),
+});

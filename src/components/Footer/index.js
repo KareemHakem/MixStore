@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Image from "../../assets/images/logo_2.png";
 import Avatar from "@mui/material/Avatar";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import "./style.css";
 
@@ -37,11 +35,8 @@ export default function Footer() {
               <Link className="link_footer" to="/AdminCreateNew">
                 Create Products
               </Link>
-
-              <Link to="">
-                <Avatar className="footer_avatar">
-                  <InstagramIcon />
-                </Avatar>
+              <Link className="link_footer" to="/AddressPage">
+                Make Order
               </Link>
               <Link to="">
                 <Avatar className="footer_avatar">
