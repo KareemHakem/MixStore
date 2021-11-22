@@ -1,0 +1,7 @@
+.form_product_admin_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  flex-direction: column;
+}

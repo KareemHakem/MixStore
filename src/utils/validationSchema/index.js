@@ -15,3 +15,11 @@ export const validationRegisterSchema = Yup.object().shape({
     "Passwords must match"
   ),
 });
+
+export const validationCreateProductsSchema = Yup.object().shape({
+  name: Yup.string().required().label("Name"),
+  desc: Yup.string().required().label("Desc"),
+  price: Yup.string().required().label("Price"),
+  image: Yup.string().required().label("Image"),
+  cal: Yup.string().required().label("Cal"),
+});

@@ -34,11 +34,10 @@ export default function Footer() {
         <div className="right_side_footer">
           <ul className="ul_footer_page">
             <li className="li_footer_page">
-              <Link to="">
-                <Avatar className="footer_avatar">
-                  <FacebookIcon />
-                </Avatar>
+              <Link className="link_footer" to="/AdminCreateNew">
+                Create Products
               </Link>
+
               <Link to="">
                 <Avatar className="footer_avatar">
                   <InstagramIcon />

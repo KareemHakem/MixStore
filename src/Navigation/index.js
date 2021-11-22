@@ -6,6 +6,7 @@ import { HomePage } from "../pages/main/HomePage";
 import { LoginPage } from "../pages/main/LoginPage";
 import { ProductDetailPage } from "../pages/main/ProductDetailPage";
 import { RegisterPage } from "../pages/main/RegisterPage";
+import { AdminCreateNew } from "../pages/admin/AdminCreateNew";
 
 export default function Navigation() {
   return (
@@ -21,6 +22,7 @@ export default function Navigation() {
         <Route path="/login" exact component={LoginPage} />
         <Route path="/cart" exact component={CartPage} />
         <Route path="/favorite" exact component={FavoritePage} />
+        <Route path="/AdminCreateNew" exact component={AdminCreateNew} />
       </Switch>
     </div>
   );

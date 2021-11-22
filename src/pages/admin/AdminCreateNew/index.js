@@ -1,9 +1,13 @@
 import React from "react";
+import AdminCreateProduct from "../../../components/AdminCreateProduct";
 
-export default function AdminCreateNew() {
+export function AdminCreateNew() {
+  const handleCreateProductsSubmit = (values) => {
+    console.log(values);
+  };
   return (
-    <div>
-      <h1> hello admin </h1>
-    </div>
+    <AdminCreateProduct
+      handleCreateProductsSubmit={handleCreateProductsSubmit}
+    />
   );
 }
