@@ -1,12 +1,11 @@
 import React from "react";
 import { Checkbox } from "@mui/material";
 import { Favorite, FavoriteBorder } from "@mui/icons-material";
+import { COLORS } from "../../styles/colors";
 import Button from "../../commons/Button";
 import "./style.css";
 
-
-
-export default function ProductCard({ item: theProduct }) {
+export default function ProductCard({ color = COLORS, item: theProduct }) {
   return (
     <div className="Page_desc_height">
       <div className="card_item_desc">
@@ -28,7 +27,7 @@ export default function ProductCard({ item: theProduct }) {
           <Button
             className=""
             text="add to cart"
-            color="#CCEDE4"
+            color={color.dark}
             marginTop={"40px"}
           />
         </div>

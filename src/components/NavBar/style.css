@@ -5,8 +5,9 @@
   height: 65px;
   width: 100%;
   color: rgb(0, 0, 0);
-  font-family: "Dancing Script", cursive;
-  background-image: linear-gradient(
+  font-family: 'Roboto Condensed', sans-serif; 
+  background-color: #fff !important;
+  /* background-image: linear-gradient(
     to right,
     #F2AA61,
     #fee5e0,
@@ -15,7 +16,7 @@
     #f0b3b2,
     #ccede4,
     #ccede4
-  );
+  ); */
   box-shadow: rgba(0, 0, 0, 0.171) 0px 4px 12px;
   position: fixed;
   z-index: 200px;
@@ -75,6 +76,9 @@
 
 /* 
 font-family: 'Montagu Slab', serif;
-font-family: 'Praise', cursive;
-font-family: 'Dancing Script', cursive;
+
 font-family: 'Roboto Condensed', sans-serif; */
+
+/* 
+font-family: 'Praise', cursive;
+font-family: 'Dancing Script', cursive; */

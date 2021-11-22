@@ -9,13 +9,13 @@ import "./style.css";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer_for_pages">
       <div className="footer_line"></div>
 
       <div className="footer_sides">
         <div className="lift_side_footer">
-          <ul className="ul">
-            <li className="li">
+          <ul className="ul_footer_page">
+            <li className="li_footer_page">
               <Link className="link_footer" to="/">
                 HomePage
               </Link>
@@ -32,8 +32,8 @@ export default function Footer() {
         <img alt="logoImage" src={Image} className="medal_footer" />
 
         <div className="right_side_footer">
-          <ul className="ul">
-            <li className="li">
+          <ul className="ul_footer_page">
+            <li className="li_footer_page">
               <Link to="">
                 <Avatar className="footer_avatar">
                   <FacebookIcon />

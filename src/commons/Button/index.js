@@ -4,31 +4,24 @@ import "./style.css";
 
 export default function Button({
   text,
-  onClick,
-  color = COLORS.primary,
+  disabled,
+  color = COLORS,
   height,
   width,
-  marginTop,
   margin,
-  marginLeft,
-  marginRight,
-  marginBottom,
+  ...props
 }) {
   return (
     <button
-      onClick={onClick}
       text={text}
-      className="main-button"
+      className={disabled ? "disabled_button" : "main-button"}
       style={{
         backgroundColor: color,
         width,
         height,
-        marginTop,
         margin,
-        marginLeft,
-        marginRight,
-        marginBottom,
       }}
+      {...props}
     >
       {text}
     </button>

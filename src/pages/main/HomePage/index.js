@@ -6,8 +6,6 @@ import { COLORS } from "../../../styles/colors";
 import Loading from "../../../commons/Loading";
 import Error from "../../../commons/Error";
 import Card from "../../../components/Card";
-// import NavBar from "../../../components/NavBar";
-// import Footer from "../../../components/Footer";
 import "./style.css";
 
 export function HomePage() {
@@ -35,7 +33,6 @@ export function HomePage() {
 
   return (
     <div>
-      {/* <NavBar /> */}
       <div className="HomePage">
         {products.map((product) => (
           <Card
@@ -45,7 +42,6 @@ export function HomePage() {
           />
         ))}
       </div>
-      {/* <Footer /> */}
     </div>
   );
 }
