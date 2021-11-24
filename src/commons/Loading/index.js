@@ -11,7 +11,7 @@ export default function Loading({ color = COLORS.blue, visible }) {
       color={color}
       height={200}
       width={300}
-      className="loading"
+      className="loading  full_screen"
     />
   );
 }

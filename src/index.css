@@ -11,36 +11,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* background-image: linear-gradient(
-    to right,
-    #F2AA61,
-    #fee5e0,
-    #fed5d1,
-    #fed5d1,
-    #f0b3b2,
-    #ccede4,
-    #ccede4
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(
+    60deg,
+    rgba(238, 174, 202, 0.753) 40%,
+    rgba(148, 187, 233, 1) 35%,
+    rgba(0, 213, 255, 0.26) 100%
   ); */
 
-  /* background-image: linear-gradient(
-    to right,
-    #fcff30,
-    #5eb3c9,
-    #18b5d9,
-    #88c7e0,
-    #3551eed3
-  ); */
-
-  /* background-image: linear-gradient(
-    direction,
-    color- #feb100,
-    color- #b34202,
-    color- #0035e9
-  ); */
+  background-color: rgba(238, 174, 202, 0.753);
 }
 
 .full_screen {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
 }
 

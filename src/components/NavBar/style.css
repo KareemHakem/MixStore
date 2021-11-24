@@ -2,33 +2,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 65px;
   width: 100%;
   color: rgb(0, 0, 0);
-  font-family: 'Roboto Condensed', sans-serif; 
   background-color: #fff !important;
-  /* background-image: linear-gradient(
-    to right,
-    #F2AA61,
-    #fee5e0,
-    #fed5d1,
-    #fed5d1,
-    #f0b3b2,
-    #ccede4,
-    #ccede4
-  ); */
-  box-shadow: rgba(0, 0, 0, 0.171) 0px 4px 12px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    50deg,
+    rgba(238, 174, 202, 0.753) 40%,
+    rgba(148, 187, 233, 1) 35%,
+    rgb(238, 174, 202) 100%
+  );
+
   position: absolute;
-  z-index: 200px;
   top: 0;
-  /* overflow: hidden; */
+  font-family: "Playfair Display", serif;
 }
 
 .left_side {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 580px;
+  margin-right: 400px;
 }
 
 .logo_image_nav {
@@ -42,22 +38,57 @@
   font-family: "Dancing Script", cursive;
 }
 
-.ul {
+.ul_nav_bar_link {
   list-style-type: none;
 }
 
-.li {
+.li_nav_bar_link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.link {
+.link_Logo {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   color: #000;
-  padding: 10px;
+  padding: 5px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.link:hover {
+  border-bottom: 1px solid #589cd4;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #589cd4;
+  padding: 4px;
+}
+
+.link_nav_icon {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
+  color: #000;
+  margin-left: 10px;
+}
+
+.link_nav_icon .avatar :hover {
+  border-bottom: 1px solid #589cd4 !important ;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
+  color: #589cd4 !important ;
+  padding: 4px;
 }
 
 .stack_icon {
@@ -71,7 +102,6 @@
   font-weight: 400 !important;
   background-color: transparent !important;
   color: #000 !important;
-  font-family: "Dancing Script", cursive !important;
 }
 
 /* 

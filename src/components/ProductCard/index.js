@@ -1,11 +1,10 @@
 import React from "react";
 import { Checkbox } from "@mui/material";
 import { Favorite, FavoriteBorder } from "@mui/icons-material";
-import { COLORS } from "../../styles/colors";
 import Button from "../../commons/Button";
 import "./style.css";
 
-export default function ProductCard({ color = COLORS, item: theProduct }) {
+export default function ProductCard({ item: theProduct }) {
   return (
     <div className="Page_desc_height">
       <div className="card_item_desc">
@@ -22,14 +21,15 @@ export default function ProductCard({ color = COLORS, item: theProduct }) {
           </div>
         </div>
 
+        {/* <div>
+          {theProduct.ingredients.map((ingredient) => (
+            <li kry={ingredient}> {ingredient} </li>
+          ))}
+        </div> */}
+
         <h3 className="desc_item_desc"> {theProduct.desc} </h3>
         <div className="btn_item_desc">
-          <Button
-            className=""
-            text="add to cart"
-            color={color.dark}
-            marginTop={"40px"}
-          />
+          <Button text="Add To Cart" type="submit" margin={20} />
         </div>
       </div>
       <img className="img_item_desc" src={theProduct.image} alt="imageItem" />

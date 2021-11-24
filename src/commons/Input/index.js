@@ -10,8 +10,8 @@ export default function Input({ Icon, width, margin, ...props }) {
         margin,
       }}
     >
-      {Icon && <Icon />}
-      <input {...props} className="input" />
+      {Icon && <Icon className="icon_input" />}
+      <input className="input" {...props} />
     </div>
   );
 }

@@ -5,7 +5,6 @@ import "./style.css";
 export default function Button({
   text,
   disabled,
-  color = COLORS,
   height,
   width,
   margin,
@@ -14,9 +13,8 @@ export default function Button({
   return (
     <button
       text={text}
-      className={disabled ? "disabled_button" : "main-button"}
+      className={ + disabled ? "disabled_button" : "main-button"}
       style={{
-        backgroundColor: color,
         width,
         height,
         margin,

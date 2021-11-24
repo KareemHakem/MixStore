@@ -7,6 +7,7 @@ import Loading from "../../../commons/Loading";
 import Error from "../../../commons/Error";
 import Card from "../../../components/Card";
 import "./style.css";
+import SwiperHome from "../../../components/SwiperHome";
 
 export function HomePage() {
   const [loading, setLoading] = useState(false);
@@ -34,6 +35,8 @@ export function HomePage() {
   return (
     <div>
       <div className="HomePage">
+        <SwiperHome/>
+        {/* <SwiperForm /> */}
         {products.map((product) => (
           <Card
             key={product._id}
