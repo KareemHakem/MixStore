@@ -35,8 +35,8 @@ export function HomePage() {
   return (
     <div>
       <div className="HomePage">
-        <SwiperHome/>
-        {/* <SwiperForm /> */}
+        <SwiperHome className="SwiperHome" />
+
         {products.map((product) => (
           <Card
             key={product._id}

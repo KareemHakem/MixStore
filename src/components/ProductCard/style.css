@@ -47,7 +47,10 @@
 }
 
 .icon_item_like_desc {
-  margin-left: 100px !important;
+  margin-left: 200px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .desc_item_desc {
@@ -58,4 +61,11 @@
 
 .fav_icon_desc {
   color: #ccede4 !important ;
+}
+
+.fav_icon_desc {
+  color: #ccede4 !important ;
+}
+.button_plus {
+  margin-top: 400px;
 }

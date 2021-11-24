@@ -19,11 +19,11 @@ body {
     rgba(0, 213, 255, 0.26) 100%
   ); */
 
-  background-color: rgba(238, 174, 202, 0.753);
+  background-color: rgba(148, 188, 233, 0.836);
 }
 
 .full_screen {
-  height: 70vh;
+  height: 100vh;
   width: 100%;
 }
 

@@ -31,7 +31,7 @@ export default function Footer() {
               <Link className="link_footer" to="/AdminCreateNew">
                 Create Products
               </Link>
-              <Link className="link_footer" to="/AddressPage">
+              <Link className="link_footer" to="/MyOrderPage">
                 Make Order
               </Link>
             </li>

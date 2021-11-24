@@ -2,9 +2,7 @@ import React from "react";
 import { Formik, Form } from "formik";
 import { FormInput } from "../Form/FormInputs";
 import { validationRegisterSchema as validationSchema } from "../../utils/validationSchema";
-import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
-import EmailIcon from "@mui/icons-material/Email";
-import VisibilityIcon from "@mui/icons-material/Visibility";
+import { Icon } from "../../FolderIcon";
 import Button from "../../commons/Button";
 import "./style.css";
 
@@ -27,27 +25,27 @@ const RegisterForm = ({ handleRegisterSubmit }) => {
             <FormInput
               name="firstName"
               placeholder="First Name"
-              Icon={() => <DriveFileRenameOutlineIcon />}
+              Icon={() => Icon.DriveFileRenameOutlineIcon}
             />
             <FormInput
               name="lastName"
               placeholder="Last Name"
-              Icon={() => <DriveFileRenameOutlineIcon />}
+              Icon={() => Icon.DriveFileRenameOutlineIcon}
             />
             <FormInput
               name="email"
               placeholder="Email"
-              Icon={() => <EmailIcon />}
+              Icon={() => Icon.EmailIcon}
             />
             <FormInput
               name="password"
               placeholder="Password"
-              Icon={() => <VisibilityIcon />}
+              Icon={() => Icon.VisibilityIcon}
             />
             <FormInput
               name="confirmPassword"
               placeholder="Confirm Password"
-              Icon={() => <VisibilityIcon />}
+              Icon={() => Icon.VisibilityIcon}
             />
             <Button
               text="Register"

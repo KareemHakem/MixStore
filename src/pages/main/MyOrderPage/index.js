@@ -1,10 +1,14 @@
 import React from "react";
+import AddAddressUser from "../../../components/AddAddressUser";
 import "./style.css";
 
-export default function MyOrderPage() {
+export function MyOrderPage() {
+  const handleAddAddressSubmit = (values) => {
+    console.log(values);
+  };
   return (
     <div>
-      <h1> MyOrderPage </h1>
+      <AddAddressUser handleAddAddressSubmit={handleAddAddressSubmit} />
     </div>
   );
 }

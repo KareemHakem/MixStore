@@ -1,16 +1,9 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import "./style.css";
-
-// import Swiper core and required modules
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 
-// install Swiper modules
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const SwiperHome = () => {

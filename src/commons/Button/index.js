@@ -1,5 +1,4 @@
 import React from "react";
-import { COLORS } from "../../styles/colors";
 import "./style.css";
 
 export default function Button({

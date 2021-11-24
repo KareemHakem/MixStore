@@ -21,15 +21,9 @@ export default function ProductCard({ item: theProduct }) {
           </div>
         </div>
 
-        {/* <div>
-          {theProduct.ingredients.map((ingredient) => (
-            <li kry={ingredient}> {ingredient} </li>
-          ))}
-        </div> */}
-
         <h3 className="desc_item_desc"> {theProduct.desc} </h3>
         <div className="btn_item_desc">
-          <Button text="Add To Cart" type="submit" margin={20} />
+          <Button text="Add To Cart" type="submit" margin={50} />
         </div>
       </div>
       <img className="img_item_desc" src={theProduct.image} alt="imageItem" />

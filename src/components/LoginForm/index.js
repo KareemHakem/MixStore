@@ -2,8 +2,7 @@ import React from "react";
 import { Formik, Form } from "formik";
 import { validationLoginSchema as validationSchema } from "../../utils/validationSchema";
 import { FormInput } from "../../components/Form/FormInputs";
-import EmailIcon from "@mui/icons-material/Email";
-import VisibilityIcon from "@mui/icons-material/Visibility";
+import { Icon } from "../../FolderIcon";
 import Button from "../../commons/Button";
 import "./style.css";
 
@@ -20,12 +19,12 @@ const LoginForm = ({ handleLoginSubmit }) => {
             <FormInput
               name="email"
               placeholder="Email"
-              Icon={() => <EmailIcon />}
+              Icon={() => Icon.EmailIcon}
             />
             <FormInput
               name="password"
               placeholder="Password"
-              Icon={() => <VisibilityIcon />}
+              Icon={() => Icon.VisibilityIcon}
             />
             <Button
               text="Login"
