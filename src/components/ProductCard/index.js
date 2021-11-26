@@ -21,6 +21,16 @@ export default function ProductCard({ item: theProduct }) {
           </div>
         </div>
 
+        {/* <div>
+          {theProduct.ingredients.map((ingredient) => {
+            return (
+              <ul>
+                <li>{ingredient}</li>
+              </ul>
+            );
+          })}
+        </div> */}
+
         <h3 className="desc_item_desc"> {theProduct.desc} </h3>
         <div className="btn_item_desc">
           <Button text="Add To Cart" type="submit" margin={50} />

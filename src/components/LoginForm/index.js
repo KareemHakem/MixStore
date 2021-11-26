@@ -6,7 +6,7 @@ import { Icon } from "../../FolderIcon";
 import Button from "../../commons/Button";
 import "./style.css";
 
-const LoginForm = ({ handleLoginSubmit }) => {
+const LoginForm = ({ handleLoginSubmit, loading}) => {
   return (
     <div className="full_screen">
       <Formik
@@ -31,6 +31,7 @@ const LoginForm = ({ handleLoginSubmit }) => {
               type="submit"
               disabled={!dirty || !isValid || isSubmitting}
               margin={30}
+              loading={loading}
             />
           </Form>
         )}

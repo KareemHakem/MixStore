@@ -6,6 +6,11 @@
   border-radius: 23px;
   outline: none;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   cursor: pointer;
   font-size: 15px;
   font-weight: 400;
@@ -37,6 +42,10 @@
   font-weight: 400;
   font-weight: bolder;
   font-family: "Playfair Display", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   outline: none;
   border: 1px solid #d4b2d3;
   cursor: pointer;
