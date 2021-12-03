@@ -9,7 +9,7 @@ import ProductCard from "../../../components/ProductCard";
 
 export function ProductDetailPage() {
   const [loading, setLoading] = useState(false);
-  const [theProduct, setTheProduct] = useState({});
+  const [Product, setProduct] = useState({});
   const [error, setError] = useState(null);
   const { id } = useParams();
 
@@ -17,7 +17,7 @@ export function ProductDetailPage() {
     if (id) {
       setLoading(true);
       fetchProduct(id)
-        .then((res) => setTheProduct(res))
+        .then((res) => setProduct(res))
         .catch((error) => setError(error))
         .finally(() => setLoading(false));
     }
@@ -28,7 +28,7 @@ export function ProductDetailPage() {
 
   return (
     <div>
-      <ProductCard item={theProduct} />
+      <ProductCard item={Product} />
     </div>
   );
 }

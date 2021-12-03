@@ -4,25 +4,25 @@ import { Favorite, FavoriteBorder } from "@mui/icons-material";
 import Button from "../../commons/Button";
 import "./style.css";
 
-export default function ProductCard({ item: theProduct }) {
+export default function ProductCard({ item: Product }) {
   return (
     <div className="Page_desc_height">
       <div className="card_item_desc">
         <div className="name_likes_part_item_desc">
           <div>
-            <h1 className="name_item_desc"> {theProduct.name} </h1>
+            <h1 className="name_item_desc"> {Product.name} </h1>
           </div>
           <div className="likes_item_desc">
             <Checkbox
               icon={<FavoriteBorder />}
               checkedIcon={<Favorite className="fav_icon_desc" />}
             />
-            <h3> {theProduct.liked} </h3>
+            <h3> {Product.liked} </h3>
           </div>
         </div>
 
         {/* <div>
-          {theProduct.ingredients.map((ingredient) => {
+          {Product.ingredients.map((ingredient) => {
             return (
               <ul>
                 <li>{ingredient}</li>
@@ -31,12 +31,12 @@ export default function ProductCard({ item: theProduct }) {
           })}
         </div> */}
 
-        <h3 className="desc_item_desc"> {theProduct.desc} </h3>
+        <h3 className="desc_item_desc"> {Product.desc} </h3>
         <div className="btn_item_desc">
           <Button text="Add To Cart" type="submit" margin={50} />
         </div>
       </div>
-      <img className="img_item_desc" src={theProduct.image} alt="imageItem" />
+      <img className="img_item_desc" src={Product.image} alt="imageItem" />
     </div>
   );
 }

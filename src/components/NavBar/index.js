@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Image from "../../assets/images/logo_2.png";
 import Avatar from "@mui/material/Avatar";
-import { Icon } from "../../FolderIcon";
+import { Icon } from "../../assets/FolderIcon";
 import "./style.css";
 
 export default function NavBar() {

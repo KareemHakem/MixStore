@@ -1,15 +1,22 @@
-import React, { useEffect, useState } from "react";
-import LoginForm from "../../../components/LoginForm";
+import React, { useState } from "react";
+
+import { useDispatch } from "react-redux";
+import { userLogInAuth } from "../../../redux/User/action";
+
+import { UsersAuthNavigation } from "../../../hooks/UsersAuthNavigation";
+
 import { logInrUser } from "../../../api/requests/Users";
-import { toast } from "react-toastify";
+
 import { errorHandlers } from "../../../utils/errorHandlers";
+
+import LoginForm from "../../../components/LoginForm";
 import "./style.css";
-import { useHistory } from "react-router";
 
 export function LoginPage() {
-  const [user, setUser] = useState({ user: "email" });
   const [loading, setLoading] = useState(false);
-  const history = useHistory();
+  const dispatch = useDispatch();
+
+  UsersAuthNavigation();
 
   const handleLoginSubmit = (values) => {
     const { email, password } = values;
@@ -20,19 +27,10 @@ export function LoginPage() {
 
     setLoading(true);
     logInrUser(body)
-      .then((res) => {
-        setUser(res);
-        toast.success("Welcome To Mix Store ");
-      })
+      .then((res) => dispatch(userLogInAuth(res)))
       .catch((error) => errorHandlers(error))
       .finally(() => setLoading(false));
   };
-
-  useEffect(() => {
-    if (user._id) {
-      history.push("/");
-    }
-  }, [user, history]);
 
   return <LoginForm handleLoginSubmit={handleLoginSubmit} loading={loading} />;
 }

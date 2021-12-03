@@ -2,11 +2,11 @@ import React from "react";
 import { Formik, Form } from "formik";
 import { validationLoginSchema as validationSchema } from "../../utils/validationSchema";
 import { FormInput } from "../../components/Form/FormInputs";
-import { Icon } from "../../FolderIcon";
+import { Icon } from "../../assets/FolderIcon";
 import Button from "../../commons/Button";
 import "./style.css";
 
-const LoginForm = ({ handleLoginSubmit, loading}) => {
+const LoginForm = ({ handleLoginSubmit, loading }) => {
   return (
     <div className="full_screen">
       <Formik

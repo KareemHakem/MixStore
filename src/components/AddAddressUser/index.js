@@ -2,7 +2,7 @@ import React from "react";
 import { Formik, Form } from "formik";
 import { FormInput } from "../Form/FormInputs";
 import { validationAddAddressUserSchema as validationSchema } from "../../utils/validationSchema";
-import { Icon } from "../../FolderIcon";
+import { Icon } from "../../assets/FolderIcon";
 import Button from "../../commons/Button";
 import "./style.css";
 
