@@ -6,7 +6,7 @@
 }
 
 .footer_line {
-  border: 0.5px solid rgb(26, 24, 24);
+  border: 0.5px solid #fca212;
   margin-top: 20px;
 }
 
@@ -22,7 +22,6 @@
   height: 80px;
   width: 100px;
   object-fit: contain;
-  
 }
 
 .medal_footer {
@@ -50,26 +49,26 @@
 .link_footer {
   text-decoration: none;
   margin: 10px;
-  color: black;
+  color: #fca212;
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 400;
 }
 
 .link_footer:hover {
-  border-bottom: 1px solid #589cd4;
+  border-bottom: 1px solid #fca212cb;
   text-decoration: none;
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 400;
-  color: #589cd4;
-  padding: 4px;
+  color: #fca212cb;
+  margin: 10px;
 }
 
 .link_Logo_footer {
   text-decoration: none;
   font-size: 25px;
   font-weight: 400;
-  color: #000;
+  color: #fca212;
   padding: 5px;
 }

@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-import { swiperID, swiprtID } from "../../assets/swiperImg";
+import { swiperID } from "../../assets/swiperImg";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import { styleSwiper } from "./style";
-import "./style.css";
 import Button from "../../commons/Button";
+import "./style.css";
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 

@@ -7,6 +7,10 @@ import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutli
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FmdGoodIcon from "@mui/icons-material/FmdGood";
+import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+import CreditScoreIcon from "@mui/icons-material/CreditScore";
+import CheckIcon from "@mui/icons-material/Check";
 
 export const Icon = {
   EmailIcon: <EmailIcon />,
@@ -18,4 +22,8 @@ export const Icon = {
   VisibilityIcon: <VisibilityIcon />,
   AddShoppingCartIcon: <AddShoppingCartIcon />,
   FavoriteBorderIcon: <FavoriteBorderIcon />,
+  FmdGoodIcon: <FmdGoodIcon />,
+  PermIdentityIcon: <PermIdentityIcon />,
+  CreditScoreIcon: <CreditScoreIcon />,
+  CheckIcon: <CheckIcon />,
 };
