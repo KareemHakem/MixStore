@@ -4,11 +4,12 @@ import { FormInput } from "../Form/FormInputs";
 import { validationRegisterSchema as validationSchema } from "../../utils/validationSchema";
 import { Icon } from "../../assets/FolderIcon";
 import Button from "../../commons/Button";
+import image from "../../assets/images/png_4.png";
 import "./style.css";
 
 const RegisterForm = ({ handleRegisterSubmit, loading }) => {
   return (
-    <div className="full_screen">
+    <div className="full_page_register">
       <Formik
         initialValues={{
           firstName: "",
@@ -57,6 +58,9 @@ const RegisterForm = ({ handleRegisterSubmit, loading }) => {
           </Form>
         )}
       </Formik>
+      <div>
+        <img className="register_img" src={image} alt="imageForJuice" />
+      </div>
     </div>
   );
 };

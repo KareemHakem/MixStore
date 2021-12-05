@@ -4,11 +4,12 @@ import { validationLoginSchema as validationSchema } from "../../utils/validatio
 import { FormInput } from "../../components/Form/FormInputs";
 import { Icon } from "../../assets/FolderIcon";
 import Button from "../../commons/Button";
+import image from "../../assets/images/png3.png";
 import "./style.css";
 
 const LoginForm = ({ handleLoginSubmit, loading }) => {
   return (
-    <div className="full_screen">
+    <div className="full_page_register">
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={validationSchema}
@@ -36,6 +37,9 @@ const LoginForm = ({ handleLoginSubmit, loading }) => {
           </Form>
         )}
       </Formik>
+      <div>
+        <img className="login_img" src={image} alt="'imageForJuice" />
+      </div>
     </div>
   );
 };

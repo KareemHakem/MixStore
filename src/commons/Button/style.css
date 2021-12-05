@@ -1,6 +1,6 @@
 .main-button {
   color: #000 !important;
-  background-color: #95bce9 !important;
+  background-color: #fca212e1 !important;
   height: 40px;
   width: 280px;
   border-radius: 23px;
@@ -19,7 +19,7 @@
 }
 
 .main-button:hover {
-  color: #000 !important;
+  color: #fca212e1 !important;
   outline: none;
   text-decoration: none;
   font-family: "Playfair Display", serif;
@@ -29,12 +29,12 @@
   font-weight: 400;
   border: 1px solid #000;
   transition: 1s ease-out !important;
-  background-color: #f2c2d7 !important;
+  background-color: #fca212e1 !important;
 }
 
 .disabled_button {
-  color: rgba(0, 0, 0, 0.411) !important ;
-  background-color: #d4b2d3;
+  color: #000 !important ;
+  background-color: #fca2129f;
   height: 40px;
   width: 280px;
   border-radius: 23px;
@@ -47,7 +47,7 @@
   justify-content: center;
   flex-direction: column;
   outline: none;
-  border: 1px solid #d4b2d3;
+  border: 1px solid #0000;
   cursor: pointer;
 }
 
