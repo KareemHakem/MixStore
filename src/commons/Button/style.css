@@ -19,17 +19,16 @@
 }
 
 .main-button:hover {
-  color: #fca212e1 !important;
+  color: #fff !important;
   outline: none;
   text-decoration: none;
   font-family: "Playfair Display", serif;
-  border: 1.5px solid #000;
+  border: 1.5px solid #fca212e1;
   cursor: pointer;
   font-size: 15px;
   font-weight: 400;
-  border: 1px solid #000;
   transition: 1s ease-out !important;
-  background-color: #fca212e1 !important;
+  background-color: #000 !important;
 }
 
 .disabled_button {
