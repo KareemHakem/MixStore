@@ -1,9 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { userLogOutAuth } from "../../redux/User/action";
 import Image from "../../assets/images/logo_3.png";
 import "./style.css";
 
 export default function Footer() {
+  const { isRegister } = useSelector((state) => state.users);
+  const dispatch = useDispatch();
+  const handleLogout = () => dispatch(userLogOutAuth());
   return (
     <div className="footer_for_pages">
       <div className="footer_line"></div>
@@ -12,12 +18,20 @@ export default function Footer() {
         <div className="lift_side_footer">
           <ul className="ul_footer_page">
             <li className="li_footer_page">
-              <Link className="link_footer" to="/logIn">
-                Log In
-              </Link>
-              <Link className="link_footer" to="/register">
-                Register
-              </Link>
+              {isRegister ? (
+                <div onClick={handleLogout} className="userNameFooter">
+                  Logout
+                </div>
+              ) : (
+                <>
+                  <Link className="link_footer" to="/logIn">
+                    Log In
+                  </Link>
+                  <Link className="link_footer" to="/register">
+                    Register
+                  </Link>
+                </>
+              )}
             </li>
           </ul>
         </div>
@@ -28,9 +42,6 @@ export default function Footer() {
         <div className="right_side_footer">
           <ul className="ul_footer_page">
             <li className="li_footer_page">
-              <Link className="link_footer" to="/AdminCreateNew">
-                Create Products
-              </Link>
               <Link className="link_footer" to="/MyOrderPage">
                 Make Order
               </Link>

@@ -14,10 +14,7 @@ export default function Navigation() {
     <div>
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route
-          path="/products/detail/:id"
-          exact
-          component={ProductDetailPage}
+        <Route path="/products/detail/:id" exact component={ProductDetailPage}
         />
         <Route path="/register" exact component={RegisterPage} />
         <Route path="/login" exact component={LoginPage} />

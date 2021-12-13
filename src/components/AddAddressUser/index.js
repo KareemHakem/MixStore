@@ -7,6 +7,7 @@ import Button from "../../commons/Button";
 import "./style.css";
 
 const AddAddressUser = ({ handleAddAddressSubmit }) => {
+  const {EmailIcon} = Icon;
   return (
     <div className="full_page">
       <Formik
@@ -20,12 +21,12 @@ const AddAddressUser = ({ handleAddAddressSubmit }) => {
         validationSchema={validationSchema}
         onSubmit={handleAddAddressSubmit}
       >
-        {({ isValid, dirty, isSubmitting }) => (
+        {({ isValid, dirty }) => (
           <Form className="AddAddressForm">
             <FormInput
               name="email"
               placeholder="Email"
-              Icon={() => Icon.EmailIcon}
+              Icon={()=> <EmailIcon />}
             />
             <FormInput
               name="phoneNumber"
@@ -51,7 +52,7 @@ const AddAddressUser = ({ handleAddAddressSubmit }) => {
               text="Order"
               type="submit"
               margin={30}
-              disabled={!dirty || !isValid || isSubmitting}
+              disabled={!dirty || !isValid}
             />
           </Form>
         )}

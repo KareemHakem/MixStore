@@ -1,33 +1,29 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+
 import { useHistory } from "react-router";
-import { fetchProducts } from "../../../api/requests/Products";
-import { COLORS } from "../../../styles/colors";
+
+import { useSelector, useDispatch } from "react-redux";
+import { fetchProduct } from "../../../redux/products/action";
+
 import Loading from "../../../commons/Loading";
 import Error from "../../../commons/Error";
 import Card from "../../../components/Card";
-import "./style.css";
 import SwiperHome from "../../../components/SwiperHome";
+import { COLORS } from "../../../styles/colors";
+import "./style.css";
 
 export function HomePage() {
-  const [loading, setLoading] = useState(false);
-  const [products, setProducts] = useState([]);
-  const [error, setError] = useState(null);
-
+  const { error, loading, products } = useSelector((state) => state.products);
+  const dispatch = useDispatch();
   const history = useHistory();
-  const handleNavigate = (id) => history.push(`/products/detail/${id}`);
+
+  const handleNavigate = (id) => {
+    history.push(`/products/detail/${id}`);
+  };
 
   useEffect(() => {
-    setLoading(true);
-    fetchProducts()
-      .then((res) => {
-        setProducts(res.products);
-      })
-      .catch((error) => {
-        setError(error);
-      })
-      .finally(() => setLoading(false));
-  }, []);
+    dispatch(fetchProduct());
+  }, [dispatch]);
 
   if (loading) return <Loading visible={loading} color={COLORS.lightWithe} />;
   if (error) return <Error />;
@@ -37,7 +33,7 @@ export function HomePage() {
       <div className="HomePage">
         <SwiperHome className="SwiperHome" />
 
-        {products.map((product) => (
+        {products?.map((product) => (
           <Card
             key={product._id}
             item={product}

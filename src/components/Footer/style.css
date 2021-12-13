@@ -15,7 +15,7 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin-left: 90px;
+  cursor: pointer;
 }
 
 .medal_footer {
@@ -71,4 +71,10 @@
   font-weight: 400;
   color: #fca212;
   padding: 5px;
+}
+
+.userNameFooter {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  color: #fca212;
 }

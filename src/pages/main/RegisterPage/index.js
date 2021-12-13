@@ -1,21 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { userRegisterAuth } from "../../../redux/User/action";
 
 import { UsersAuthNavigation } from "../../../hooks/UsersAuthNavigation";
-
-import { registerUser } from "../../../api/requests/Users";
-
-import { errorHandlers } from "../../../utils/errorHandlers";
 
 import RegisterForm from "../../../components/RegisterForm";
 import "./style.css";
 
 export function RegisterPage() {
-  const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
-
+  const { loading } = useSelector(state => state.users);
   UsersAuthNavigation();
 
   const handleRegisterSubmit = (values) => {
@@ -26,11 +21,7 @@ export function RegisterPage() {
       password,
     };
 
-    setLoading(true);
-    registerUser(body)
-      .then((res) => dispatch(userRegisterAuth(res)))
-      .catch((error) => errorHandlers(error))
-      .finally(() => setLoading(false));
+    dispatch(userRegisterAuth(body));
   };
 
   return (

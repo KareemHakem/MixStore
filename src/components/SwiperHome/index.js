@@ -28,12 +28,13 @@ const SwiperHome = () => {
       >
         {swiperID.map((swiper) => (
           <SwiperSlide
+            key={swiper.id}
             style={{ opacity: 0.75, backgroundImage: `url(${swiper.image})` }}
             className="swiper_slider"
           >
             <div className="btn_text_swiper">
               <h1>Hello to My Website</h1>
-              <Button text="See More" />
+              <Button margin={10} text="See More" />
             </div>
           </SwiperSlide>
         ))}

@@ -14,7 +14,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import { styleIcon } from "./style";
 
 export const Icon = {
-  EmailIcon: <EmailIcon style={styleIcon} />,
+  EmailIcon:({...props})=> <EmailIcon   {...props}/>,
   PhoneIphoneIcon: <PhoneIphoneIcon style={styleIcon} />,
   LocationCityIcon: <LocationCityIcon style={styleIcon} />,
   HomeIcon: <HomeIcon style={styleIcon} />,

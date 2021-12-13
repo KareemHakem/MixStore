@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import Image from "../../assets/images/logo_3.png";
 import Avatar from "@mui/material/Avatar";
 import { Icon } from "../../assets/FolderIcon";
 import "./style.css";
 
 export default function NavBar() {
+  const { user, isRegister } = useSelector((state) => state.users);
   return (
     <div className="nav_bar">
       <div className="left_side">
@@ -17,12 +19,19 @@ export default function NavBar() {
       <div className="right_side">
         <ul className="ul_nav_bar_link">
           <li className="li_nav_bar_link">
-            <Link className="link" to="/logIn">
-              Log In
-            </Link>
-            <Link className="link" to="/register">
-              Register
-            </Link>
+            {isRegister ? (
+              <div> {user.name} </div>
+            ) : (
+              <>
+                <Link className="link" to="/logIn">
+                  Log In
+                </Link>
+                <Link className="link" to="/register">
+                  Register
+                </Link>
+              </>
+            )}
+
             <Link className="link_nav_icon" to="/cart">
               <Avatar className="avatar">{Icon.AddShoppingCartIcon}</Avatar>
             </Link>

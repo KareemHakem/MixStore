@@ -45,5 +45,3 @@ const LoginForm = ({ handleLoginSubmit, loading }) => {
 };
 
 export default LoginForm;
-
-// src="https://bakerbynature.com/wp-content/uploads/2015/03/IMG_8342-2.jpg"
