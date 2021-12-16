@@ -4,10 +4,11 @@ import { useSelector } from "react-redux";
 import Image from "../../assets/images/logo_3.png";
 import Avatar from "@mui/material/Avatar";
 import { Icon } from "../../assets/FolderIcon";
+import DropDownUser from "../../components/DropDownUser";
 import "./style.css";
 
 export default function NavBar() {
-  const { user, isRegister } = useSelector((state) => state.users);
+  const { isRegister } = useSelector((state) => state.users);
   return (
     <div className="nav_bar">
       <div className="left_side">
@@ -20,7 +21,7 @@ export default function NavBar() {
         <ul className="ul_nav_bar_link">
           <li className="li_nav_bar_link">
             {isRegister ? (
-              <div> {user.name} </div>
+              <DropDownUser />
             ) : (
               <>
                 <Link className="link" to="/logIn">

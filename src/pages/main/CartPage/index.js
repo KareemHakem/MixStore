@@ -24,7 +24,7 @@ export function CartPage() {
   };
 
   const handleNavigationChickOut = () => {
-    isRegister ? history.push("/checkout") : history.push("/login");
+    isRegister ? history.push("/") : history.push("/login");
   };
 
   return (

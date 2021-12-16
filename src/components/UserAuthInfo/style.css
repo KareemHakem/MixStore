@@ -1,0 +1,27 @@
+.user_info_auth_line {
+  border: 0.5px solid #fca212;
+  margin-top: 20px;
+  width: 700px;
+  margin-top: 15px;
+}
+
+.user_info {
+  margin-top: 10px;
+  height: 30px;
+  width: 250px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #fca212;
+  color: black;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.user_info_auth {
+  color: "#000";
+  margin-left: "5px";
+}
+
+.user_info_auth_name {
+  color: #fca212;
+}

@@ -8,13 +8,17 @@ import { ProductDetailPage } from "../pages/main/ProductDetailPage";
 import { RegisterPage } from "../pages/main/RegisterPage";
 import { AdminCreateNew } from "../pages/admin/AdminCreateNew";
 import { MyOrderPage } from "../pages/main/MyOrderPage";
+import { UserInfo } from "../pages/main/UserInfo";
 
 export default function Navigation() {
   return (
     <div>
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/products/detail/:id" exact component={ProductDetailPage}
+        <Route
+          path="/products/detail/:id"
+          exact
+          component={ProductDetailPage}
         />
         <Route path="/register" exact component={RegisterPage} />
         <Route path="/login" exact component={LoginPage} />
@@ -22,6 +26,7 @@ export default function Navigation() {
         <Route path="/favorite" exact component={FavoritePage} />
         <Route path="/AdminCreateNew" exact component={AdminCreateNew} />
         <Route path="/MyOrderPage" exact component={MyOrderPage} />
+        <Route path="/userInfo" exact component={UserInfo} />
       </Switch>
     </div>
   );

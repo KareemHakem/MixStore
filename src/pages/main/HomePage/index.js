@@ -31,7 +31,9 @@ export function HomePage() {
   return (
     <div>
       <div className="HomePage">
-        <SwiperHome className="SwiperHome" />
+        <div className="SwiperHome">
+          <SwiperHome />
+        </div>
 
         {products?.map((product) => (
           <Card

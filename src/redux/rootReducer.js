@@ -11,8 +11,8 @@ import userInfo from "./userInfo/reducer";
 const persistConfig = {
   key: "Root",
   storage,
-  whiteList: ["users", "cart"],
-  blacklist: ["products", "productDetail","userInfo"],
+  whiteList: ["users", "cart", "userInfo"],
+  blacklist: ["products", "productDetail"],
 };
 
 const rootReducer = combineReducers({

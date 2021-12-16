@@ -1,22 +1,22 @@
 import { types } from "./type";
 
-const initialSate = {
+const initialState = {
   isSubmit: false,
   userInfo: null,
-  error: null,
 };
 
-const userSubmitReducer = (state = initialSate, action) => {
+const userInfoSubmitReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.USER_INFO_SUBMIT:
       return {
         isSubmit: true,
-        userInfo: action.payload.values,
-        error: null,
+        userInfo: action.payload,
       };
+
     default:
       return state;
   }
 };
 
-export default userSubmitReducer;
+
+export default userInfoSubmitReducer;
