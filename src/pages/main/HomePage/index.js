@@ -29,20 +29,18 @@ export function HomePage() {
   if (error) return <Error />;
 
   return (
-    <div>
-      <div className="HomePage">
-        <div className="SwiperHome">
-          <SwiperHome />
-        </div>
-
-        {products?.map((product) => (
-          <Card
-            key={product._id}
-            item={product}
-            handleNavigate={handleNavigate}
-          />
-        ))}
+    <div className="HomePage">
+      <div className="SwiperHome">
+        <SwiperHome />
       </div>
+
+      {products?.map((product) => (
+        <Card
+          key={product._id}
+          item={product}
+          handleNavigate={handleNavigate}
+        />
+      ))}
     </div>
   );
 }

@@ -1,0 +1,7 @@
+.full_page {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  flex-direction: column !important;
+  margin-top: 100px !important;
+}

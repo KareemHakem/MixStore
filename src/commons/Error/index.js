@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../assets/images/error_404.png";
+import Image from "../../assets/images/error.png";
 import "./style.css";
 
 export default function Error({
@@ -8,7 +8,9 @@ export default function Error({
   return (
     <div className="error">
       <img src={Image} alt="error_image" className="img" />
-      <text className="error_text"> Sorry For Your Error Please look at the :  </text>
+      <text className="error_text">
+        Sorry For Your Error Please look at the :
+      </text>
       <text className="message_error"> {message} </text>
     </div>
   );

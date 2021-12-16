@@ -10,7 +10,7 @@ export default function DropDownUser() {
     <>
       <div>
         {toggleMenu ? (
-          <div onClick={() => SetToggleMenu(toggleMenu)}>{user.name}</div>
+          <div  onClick={() => SetToggleMenu(toggleMenu)}>{user.name}</div>
         ) : (
           <div onClick={() => SetToggleMenu(!toggleMenu)}> {user.name} </div>
         )}

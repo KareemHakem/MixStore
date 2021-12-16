@@ -7,9 +7,9 @@ import Button from "../../commons/Button";
 import "./style.css";
 
 const AddAddressUser = ({ handleAddAddressSubmit }) => {
-  const {EmailIcon} = Icon;
+  const { EmailIcon } = Icon;
   return (
-    <div className="full_page">
+    <div>
       <Formik
         initialValues={{
           email: "",
@@ -26,7 +26,7 @@ const AddAddressUser = ({ handleAddAddressSubmit }) => {
             <FormInput
               name="email"
               placeholder="Email"
-              Icon={()=> <EmailIcon />}
+              Icon={() => <EmailIcon style={{ color: "#C9810E" }} />}
             />
             <FormInput
               name="phoneNumber"

@@ -31,3 +31,15 @@ export const validationAddAddressUserSchema = Yup.object().shape({
   city: Yup.string().required().label("City"),
   zipCode: Yup.string().required().max(6).label("Zip Code"),
 });
+
+export const validationEditUserInfoSchema = Yup.object().shape({
+  email: Yup.string().required().email().label("Email"),
+  phoneNumber: Yup.string().required().max(11).label("Phone Number"),
+  address: Yup.string().required().label("Address"),
+  city: Yup.string().required().label("City"),
+  zipCode: Yup.string().required().max(6).label("Zip Code"),
+});
+
+export const validationEditUserInfoAuthSchema = Yup.object().shape({
+  name: Yup.string().required().label("Name"),
+});

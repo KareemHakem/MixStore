@@ -1,0 +1,36 @@
+.userInfo_page {
+    height: 185vh !important;
+  }
+  
+  .user_Edit_Forms {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 80px;
+  }
+  
+  .Form_Edit_Input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .userInfo_Form {
+    margin-right: 100px !important;
+  }
+  
+  .Vertical_Line_user_Info {
+    border-left: 1px solid #c9810e;
+    height: 300px;
+    padding: 0px 0px 0px 50px;
+  }
+  
+  .text_UserInfo_Edit {
+    color: #c9810e;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 80px;
+  }
+  

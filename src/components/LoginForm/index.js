@@ -8,6 +8,7 @@ import image from "../../assets/images/png3.png";
 import "./style.css";
 
 const LoginForm = ({ handleLoginSubmit, loading }) => {
+  const { EmailIcon } = Icon;
   return (
     <div className="full_page_register">
       <Formik
@@ -20,7 +21,7 @@ const LoginForm = ({ handleLoginSubmit, loading }) => {
             <FormInput
               name="email"
               placeholder="Email"
-              Icon={() => Icon.EmailIcon}
+              Icon={() => <EmailIcon style={{ color: "#C9810E" }} />}
             />
             <FormInput
               name="password"
