@@ -7,12 +7,12 @@ import Button from "../../commons/Button";
 import "./style.css";
 
 const AddAddressUser = ({ handleAddAddressSubmit }) => {
-  const { EmailIcon } = Icon;
   return (
     <div>
       <Formik
         initialValues={{
-          email: "",
+          CreditCardNumber: "",
+          CreditCardExpiryNumber: "",
           phoneNumber: "",
           city: "",
           address: "",
@@ -24,9 +24,14 @@ const AddAddressUser = ({ handleAddAddressSubmit }) => {
         {({ isValid, dirty }) => (
           <Form className="AddAddressForm">
             <FormInput
-              name="email"
-              placeholder="Email"
-              Icon={() => <EmailIcon style={{ color: "#C9810E" }} />}
+              name="CreditCardNumber"
+              placeholder="Credit Card Number"
+              Icon={() => Icon.CreditScoreIcon}
+            />
+            <FormInput
+              name="CreditCardExpiryNumber"
+              placeholder="Credit Card Expiry Number"
+              Icon={() => Icon.CreditScoreIcon}
             />
             <FormInput
               name="phoneNumber"

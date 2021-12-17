@@ -25,7 +25,16 @@ export const validationCreateProductsSchema = Yup.object().shape({
 });
 
 export const validationAddAddressUserSchema = Yup.object().shape({
-  email: Yup.string().required().email().label("Email"),
+  CreditCardNumber: Yup.string().required().max(16).label("Credit Card Number"),
+  CreditCardExpiryNumber: Yup.string()
+    .max(5, "Not a valid expiration date. Example: MM/YY")
+    .matches(
+      /([0-9]{2})\/([0-9]{2})/,
+      "Not a valid expiration date. Example: MM/YY"
+    )
+    .required("Expiration date is required")
+    .label("Credit Card Expiry Number"),
+
   phoneNumber: Yup.string().required().max(11).label("Phone Number"),
   address: Yup.string().required().label("Address"),
   city: Yup.string().required().label("City"),
@@ -33,7 +42,15 @@ export const validationAddAddressUserSchema = Yup.object().shape({
 });
 
 export const validationEditUserInfoSchema = Yup.object().shape({
-  email: Yup.string().required().email().label("Email"),
+  CreditCardNumber: Yup.string().required().max(16).label("Credit Card Number"),
+  CreditCardExpiryNumber: Yup.string()
+    .max(5, "Not a valid expiration date. Example: MM/YY")
+    .matches(
+      /([0-9]{2})\/([0-9]{2})/,
+      "Not a valid expiration date. Example: MM/YY"
+    )
+    .required("Expiration date is required")
+    .label("Credit Card Expiry Number"),
   phoneNumber: Yup.string().required().max(11).label("Phone Number"),
   address: Yup.string().required().label("Address"),
   city: Yup.string().required().label("City"),

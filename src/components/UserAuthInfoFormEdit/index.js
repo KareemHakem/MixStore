@@ -28,7 +28,7 @@ export function UserAuthInfoFormEdit({ handleEditUserInfoAuthSubmit }) {
               Icon={() => Icon.DriveFileRenameOutlineIcon}
             />
             <Button
-              text="Order"
+              text="Edit"
               type="submit"
               margin={30}
               disabled={!dirty || isSubmitting}

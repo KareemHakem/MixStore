@@ -12,6 +12,10 @@ import { useHistory } from "react-router-dom";
 export function CartPage() {
   const { cartItem } = useSelector((state) => state.cart);
   const { isRegister } = useSelector((state) => state.users);
+  const { userInfo } = useSelector((state) => state.userInfo);
+  const { user } = useSelector((state) => state.users);
+  const { product } = useSelector((state) => state.productDetail);
+
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -44,9 +48,9 @@ export function CartPage() {
           ))}
         </div>
         <div className="right_side_cart">
-          <CardShippingCartPage />
-          <CardPaymentCartPage />
-          <CardTotalCartProductPage />
+          <CardShippingCartPage user={user} userInfo={userInfo} />
+          <CardPaymentCartPage product={product} userInfo={userInfo} />
+          <CardTotalCartProductPage product={product} />
         </div>
       </div>
       <p style={{ backgroundColor: "red" }} onClick={handleClear}>

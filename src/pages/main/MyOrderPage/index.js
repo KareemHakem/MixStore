@@ -10,9 +10,17 @@ export function MyOrderPage() {
   const dispatch = useDispatch();
 
   const handleAddAddressSubmit = (values) => {
-    const { email, phoneNumber, city, address, zipCode } = values;
+    const {
+      CreditCardNumber,
+      CreditCardExpiryNumber,
+      phoneNumber,
+      city,
+      address,
+      zipCode,
+    } = values;
     const body = {
-      email,
+      CreditCardNumber,
+      CreditCardExpiryNumber,
       phoneNumber,
       city,
       address,

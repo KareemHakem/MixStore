@@ -7,12 +7,12 @@ import { Icon } from "../../assets/FolderIcon";
 import "./style.css";
 
 export function UserInfoFormEdit({ handleEditUserInfoSubmit }) {
- 
   return (
     <div>
       <Formik
         initialStatus={{
-          email: "",
+          CreditCardNumber: "",
+          CreditCardExpiryNumber: "",
           phoneNumber: "",
           city: "",
           address: "",
@@ -21,8 +21,18 @@ export function UserInfoFormEdit({ handleEditUserInfoSubmit }) {
         validationSchema={validationSchema}
         onSubmit={handleEditUserInfoSubmit}
       >
-        {({ isSubmitting, isValid, dirty }) => (
+        {({ isSubmitting,  dirty }) => (
           <Form className="full_page">
+            <FormInput
+              name="CreditCardNumber"
+              placeholder="Credit Card Number"
+              Icon={() => Icon.CreditScoreIcon}
+            />
+            <FormInput
+              name="CreditCardExpiryNumber"
+              placeholder="Credit Card Expiry Number"
+              Icon={() => Icon.CreditScoreIcon}
+            />
             <FormInput
               name="phoneNumber"
               placeholder="Phone Number"
@@ -44,7 +54,7 @@ export function UserInfoFormEdit({ handleEditUserInfoSubmit }) {
               Icon={() => Icon.DialpadIcon}
             />
             <Button
-              text="Order"
+              text="Edit"
               type="submit"
               margin={30}
               disabled={!dirty || isSubmitting}
