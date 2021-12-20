@@ -5,7 +5,7 @@ import { userInfoSubmit } from "../../../redux/userInfo/action";
 import AddAddressUser from "../../../components/AddAddressUser";
 import "./style.css";
 
-export function MyOrderPage() {
+export function UserInfoPage() {
   const history = useHistory();
   const dispatch = useDispatch();
 

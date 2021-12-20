@@ -1,0 +1,56 @@
+.CardItemHistoryPage {
+  margin-top: 100px;
+}
+
+.card_product_history-title {
+  color: #fca212;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+.card_product_history {
+  width: 70%;
+  height: 200px;
+  margin-left: 50px;
+  border: 1.5px solid #fca212;
+  margin-top: 50px;
+  border-radius: 15px;
+  display: flex;
+}
+
+.card_product_history-image-item {
+  height: 100%;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 14px 0px 0px 14px;
+}
+
+.Card_detail_product_history {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fca212;
+  font-family: "Playfair Display", serif;
+}
+
+.Card_detail_product_history-name-item {
+  display: flex;
+  text-align: center;
+}
+
+.Card_detail_product_history-name-item-name {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.Card_detail_product_history-name-item-price {
+  font-size: 30px;
+  padding: 20px;
+  margin-left: 150px;
+}
+
+.Card_detail_product_history-description-item {
+  font-size: 15px;
+  margin-left: 20px;
+}

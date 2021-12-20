@@ -5,7 +5,9 @@ import Image from "../../assets/images/logo_3.png";
 import Avatar from "@mui/material/Avatar";
 import { Icon } from "../../assets/FolderIcon";
 import DropDownUser from "../../components/DropDownUser";
+
 import "./style.css";
+
 
 export default function NavBar() {
   const { isRegister } = useSelector((state) => state.users);

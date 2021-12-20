@@ -34,7 +34,6 @@ export const validationAddAddressUserSchema = Yup.object().shape({
     )
     .required("Expiration date is required")
     .label("Credit Card Expiry Number"),
-
   phoneNumber: Yup.string().required().max(11).label("Phone Number"),
   address: Yup.string().required().label("Address"),
   city: Yup.string().required().label("City"),

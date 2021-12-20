@@ -6,11 +6,12 @@ import "./style.css";
 export default function DropDownUser() {
   const [toggleMenu, SetToggleMenu] = useState(false);
   const { user } = useSelector((state) => state.users);
+
   return (
     <>
       <div>
         {toggleMenu ? (
-          <div  onClick={() => SetToggleMenu(toggleMenu)}>{user.name}</div>
+          <div onClick={() => SetToggleMenu(toggleMenu)}>{user.name}</div>
         ) : (
           <div onClick={() => SetToggleMenu(!toggleMenu)}> {user.name} </div>
         )}

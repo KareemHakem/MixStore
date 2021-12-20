@@ -2,7 +2,7 @@ import React from "react";
 import { Icon } from "../../../assets/FolderIcon";
 import "./style.css";
 
-export default function CardPaymentCartPage({ userInfo, product }) {
+export default function CardPaymentCartPage({ userInfo }) {
   return (
     <div>
       <div className="card_pay_cart">
