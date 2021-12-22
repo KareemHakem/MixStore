@@ -10,11 +10,12 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import CreditScoreIcon from "@mui/icons-material/CreditScore";
+import SearchIcon from "@mui/icons-material/Search";
 import CheckIcon from "@mui/icons-material/Check";
 import { styleIcon } from "./style";
 
 export const Icon = {
-  EmailIcon:({...props})=> <EmailIcon   {...props}/>,
+  EmailIcon: ({ ...props }) => <EmailIcon {...props} />,
   PhoneIphoneIcon: <PhoneIphoneIcon style={styleIcon} />,
   LocationCityIcon: <LocationCityIcon style={styleIcon} />,
   HomeIcon: <HomeIcon style={styleIcon} />,
@@ -27,4 +28,5 @@ export const Icon = {
   PermIdentityIcon: <PermIdentityIcon style={styleIcon} />,
   CreditScoreIcon: <CreditScoreIcon style={styleIcon} />,
   CheckIcon: <CheckIcon style={styleIcon} />,
+  SearchIcon: <SearchIcon style={styleIcon} />,
 };

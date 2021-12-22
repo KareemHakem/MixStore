@@ -9,10 +9,11 @@
   font-family: "Playfair Display", serif;
 }
 
-.text_card_shipping {
+.card_pay_cart h3 {
   color: #fca212;
   margin-left: 10px;
   font-size: 18px;
+  margin-top: 20px;
 }
 
 .icon_text_shipping {
@@ -22,7 +23,7 @@
   margin-left: 5px;
 }
 
-.name_card_shipping {
-  margin-left: 5px;
-  font-size: 13px !important;
+.icon_text_shipping p {
+  margin-left: 10px !important;
+  font-size: 18px !important;
 }

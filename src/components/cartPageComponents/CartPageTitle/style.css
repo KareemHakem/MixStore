@@ -1,0 +1,14 @@
+.bagImage_cart {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  margin-top: 60px;
+}
+
+.title_cart_page {
+  margin-left: 43%;
+}
+
+.mienTextCardCartPage {
+  color: #fca212;
+}

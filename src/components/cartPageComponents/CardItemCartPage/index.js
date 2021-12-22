@@ -1,20 +1,26 @@
 import React from "react";
+import Button from "../../../commons/Button";
 import "./style.css";
 
 export default function CardItemCartPage({ item, handleRemoveItem }) {
-  console.log(item, "kareem item her");
   return (
     <div>
       <div className="products_cards_cart_page">
-        <div className="product_card_cart_page">
+        <div className="product_card-cart">
           <img
             className="img_product_card_cart_page"
             src={item.image}
             alt="Ju_img"
           />
-          <h3 className="text_name_product_cart"> {item.name} </h3>
-          <p className="text_name_product_cart"> {item.price} </p>
-          <h2 onClick={() => handleRemoveItem(item)}> x </h2>
+          <div className="text_name_product_cart">
+            <h3> {item.name} </h3>
+            <p> {item.price}$ </p>
+            <Button
+              width={200}
+              onClick={() => handleRemoveItem(item)}
+              text="Delete"
+            />
+          </div>
         </div>
       </div>
     </div>

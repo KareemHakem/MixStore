@@ -10,6 +10,7 @@ import Error from "../../../commons/Error";
 import Card from "../../../components/Card";
 import SwiperHome from "../../../components/SwiperHome";
 import { COLORS } from "../../../styles/colors";
+import { SearchBar } from "../../../components/SearchBar";
 import "./style.css";
 
 export function HomePage() {
@@ -30,17 +31,19 @@ export function HomePage() {
 
   return (
     <div className="HomePage">
+      <SearchBar />
       <div className="SwiperHome">
         <SwiperHome />
       </div>
-
-      {products?.map((product) => (
-        <Card
-          key={product._id}
-          item={product}
-          handleNavigate={handleNavigate}
-        />
-      ))}
+      <div className="CardSpace">
+        {products?.map((product) => (
+          <Card
+            key={product._id}
+            item={product}
+            handleNavigate={handleNavigate}
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.input-container {
+  padding: 10px;
+  width: 400px;
+  border-bottom: 1.5px solid #fca212e1;
+  background-color: #000000 !important;
+  box-shadow: #fca2128b 5px 0px 20px;
+  display: flex;
+}
+
+.input {
+  background-color: transparent !important ;
+  color: #fca212e1 !important;
+  width: 60%;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+}
