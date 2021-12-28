@@ -5,11 +5,8 @@ import { useHistory } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchProduct } from "../../../redux/products/action";
 
-import Loading from "../../../commons/Loading";
-import Error from "../../../commons/Error";
-import Card from "../../../components/Card";
 import SwiperHome from "../../../components/SwiperHome";
-import { COLORS } from "../../../styles/colors";
+import { CardContainer } from "./CardContainer";
 import { SearchBar } from "../../../components/SearchBar";
 import "./style.css";
 
@@ -26,23 +23,20 @@ export function HomePage() {
     dispatch(fetchProduct());
   }, [dispatch]);
 
-  if (loading) return <Loading visible={loading} color={COLORS.lightWithe} />;
-  if (error) return <Error />;
-
   return (
     <div className="HomePage">
-      <SearchBar />
       <div className="SwiperHome">
         <SwiperHome />
       </div>
-      <div className="CardSpace">
-        {products?.map((product) => (
-          <Card
-            key={product._id}
-            item={product}
-            handleNavigate={handleNavigate}
-          />
-        ))}
+      <SearchBar />
+      <div>
+        <CardContainer
+          className="CardSpace"
+          handleNavigate={handleNavigate}
+          products={products}
+          error={error}
+          loading={loading}
+        />
       </div>
     </div>
   );

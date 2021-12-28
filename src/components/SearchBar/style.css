@@ -3,8 +3,10 @@
   width: 400px;
   border-bottom: 1.5px solid #fca212e1;
   background-color: #000000 !important;
-  box-shadow: #fca2128b 5px 0px 20px;
+  box-shadow: #fca21255 5px 0px 10px;
   display: flex;
+  border-radius: 10px;
+  margin-top: 40px;
 }
 
 .input {

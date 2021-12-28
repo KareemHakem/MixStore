@@ -5,5 +5,5 @@ import { errorHandlers } from "../../utils/errorHandlers";
 
 
 const userEditInfo = () => {
-                              
+ 
 }

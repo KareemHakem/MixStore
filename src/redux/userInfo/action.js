@@ -4,4 +4,7 @@ const userInfoSubmit = (values) => {
   return { type: types.USER_INFO_SUBMIT, payload: values };
 };
 
-export { userInfoSubmit };
+const UserEditInfo = (values) => {
+  return { type: types.USER_EDIT_INFO_SUBMIT, payload: values };
+};
+export { userInfoSubmit, UserEditInfo };

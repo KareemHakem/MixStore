@@ -30,6 +30,8 @@ export function UserInfoPage() {
     history.push("/");
   };
 
+  
+
   return (
     <div>
       <AddAddressUser handleAddAddressSubmit={handleAddAddressSubmit} />

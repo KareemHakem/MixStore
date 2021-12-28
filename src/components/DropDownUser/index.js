@@ -1,27 +1,33 @@
-import { React, useState } from "react";
+import { React, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import useToggle from "../../hooks/useToggle";
+import { useComponentVisible } from "../../hooks/useComponentVisible";
 import "./style.css";
 
 export default function DropDownUser() {
-  const [toggleMenu, SetToggleMenu] = useState(false);
+  const { value: toggleMenu, handleToggle } = useToggle(false);
   const { user } = useSelector((state) => state.users);
+  const { ref, isComponentVisible } = useComponentVisible(document);
+
+  useEffect(() => {
+    if (isComponentVisible === false) {
+      handleToggle(false);
+    }
+  }, [isComponentVisible]);
 
   return (
-    <>
-      <div>
+    <div>
+      <div ref={ref}>
         {toggleMenu ? (
-          <div
-            className="cancelToggleMenu"
-            onClick={() => SetToggleMenu(toggleMenu)}
-          >
+          <div className="cancelToggleMenu" onMouseOver={handleToggle}>
             {user.name}
           </div>
         ) : (
-          <div onClick={() => SetToggleMenu(!toggleMenu)}>{user.name}</div>
+          <div onMouseOver={handleToggle}>{user.name}</div>
         )}
 
-        {toggleMenu && (
+        {toggleMenu && isComponentVisible && (
           <div className=" menu_container scale-up-center">
             <li>
               <ul className="dropdown_menu">
@@ -39,6 +45,6 @@ export default function DropDownUser() {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 }

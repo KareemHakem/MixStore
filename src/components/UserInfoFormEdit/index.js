@@ -10,7 +10,7 @@ export function UserInfoFormEdit({ handleEditUserInfoSubmit }) {
   return (
     <div>
       <Formik
-        initialStatus={{
+        initialValues={{
           CreditCardNumber: "",
           CreditCardExpiryNumber: "",
           phoneNumber: "",
@@ -21,7 +21,7 @@ export function UserInfoFormEdit({ handleEditUserInfoSubmit }) {
         validationSchema={validationSchema}
         onSubmit={handleEditUserInfoSubmit}
       >
-        {({ isSubmitting,  dirty }) => (
+        {({ isValid, isSubmitting, dirty }) => (
           <Form className="full_page">
             <FormInput
               name="CreditCardNumber"

@@ -20,10 +20,10 @@
 .img_item_desc {
   height: 400px;
   width: 400px;
-  border-radius: 30px 0px 30px 0px;
+  border-radius: 30px 30px 30px 30px;
   object-fit: cover;
   margin-left: 100px;
-  box-shadow: rgb(255, 255, 255) 0px 4px 12px;
+  box-shadow: #fca21293 0px 4px 12px;
 }
 
 .name_likes_part_item_desc {
@@ -71,4 +71,41 @@
 }
 .button_plus {
   margin-top: 400px;
+}
+
+.product_Card_ingredient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  margin-top: 40px;
+  color: #fca212;
+}
+
+.product_Card_ingredient-item {
+  margin-left: 30px;
+  border: 1px solid #fca212;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  height: 30px;
+  width: 90px;
+  cursor: pointer;
+  color: black !important;
+  background-color: #fca212;
+}
+
+.product_Card_ingredient-item:hover {
+  margin-left: 30px;
+  border: 1px solid #fca212;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  height: 30px;
+  width: 90px;
+  cursor: pointer;
+  color: #fca212 !important;
+  background-color: black;
+  transition: 0.5s ease-out;
 }

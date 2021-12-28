@@ -12,11 +12,15 @@ const userInfoSubmitReducer = (state = initialState, action) => {
         isSubmit: true,
         userInfo: action.payload,
       };
+    case types.USER_EDIT_INFO_SUBMIT:
+      return {
+        isSubmit: true,
+        userInfo: action.payload,
+      };
 
     default:
       return state;
   }
 };
-
 
 export default userInfoSubmitReducer;

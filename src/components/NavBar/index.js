@@ -23,7 +23,7 @@ export default function NavBar() {
         <ul className="ul_nav_bar_link">
           <li className="li_nav_bar_link">
             {isRegister ? (
-              <DropDownUser />
+              < DropDownUser className="menu-DropDown"  />
             ) : (
               <>
                 <Link className="link" to="/logIn">

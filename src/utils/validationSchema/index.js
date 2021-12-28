@@ -58,4 +58,5 @@ export const validationEditUserInfoSchema = Yup.object().shape({
 
 export const validationEditUserInfoAuthSchema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
+  email: Yup.string().required().email().label("Email"),
 });

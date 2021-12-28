@@ -11,7 +11,7 @@ export function UserAuthInfoFormEdit({ handleEditUserInfoAuthSubmit }) {
   return (
     <div>
       <Formik
-        initialStatus={{ name: "" }}
+        initialValues={{ name: "", email: "" }}
         validationSchema={validationSchema}
         onSubmit={handleEditUserInfoAuthSubmit}
       >

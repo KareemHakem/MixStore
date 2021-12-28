@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../assets/images/error.png";
+import Image from "../../assets/images/404.png";
 import "./style.css";
 
 export default function Error({
