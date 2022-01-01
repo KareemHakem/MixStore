@@ -1,5 +1,5 @@
 .userInfo__tap {
-  color: #fca212;
+  color: #000;
 }
 
 .user_info {
@@ -8,10 +8,11 @@
   width: 500px !important;
   font-size: 20px;
   border-radius: 10px;
-  background-color: #fca212cb !important;
   color: black;
   margin-left: 10px;
   font-weight: 600;
+  background: #000;
+  box-shadow: inset 38px 38px 46px #232323af, inset -38px -38px 46px #ffffff;
 }
 
 .user_info p {
@@ -19,7 +20,7 @@
 }
 
 .user_info_line {
-  border: 0.5px solid #fca212;
+  border: 0.5px solid #6e6b6b;
   margin-top: 20px;
   width: 700px;
   margin-top: 15px;

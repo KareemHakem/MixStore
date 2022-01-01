@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
@@ -9,10 +9,13 @@ import "./style.css";
 export default function Footer() {
   const { isRegister } = useSelector((state) => state.users);
   const dispatch = useDispatch();
-  const handleLogout = () => dispatch(userLogOutAuth());
+
+  const handleLogout = () => {
+    dispatch(userLogOutAuth());
+  };
   return (
     <div className="footer_for_pages">
-      <div className="footer_line"></div>
+      {/* <div className="footer_line"></div> */}
 
       <div className="footer_sides">
         <div className="lift_side_footer">
@@ -50,9 +53,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="copy_text">
-        <p> © 2021 Mix Store, Inc. </p>
-      </div>
+      {/* <div>
+        <p className="copy_text"> © 2021 Mix Store, Inc. </p>
+      </div> */}
     </div>
   );
 }

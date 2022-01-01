@@ -8,13 +8,13 @@ export const swiperID = [
     key: 2,
     id: 2,
     image:
-      "https://aseasyasapplepie.com/wp-content/uploads/2017/01/avocado-strawberry-layered-smoothie-500x500.jpg",
+      "https://media.istockphoto.com/photos/orange-juice-glass-jar-shot-on-rustic-wooden-table-picture-id915657126?b=1&k=20&m=915657126&s=170667a&w=0&h=N5gBvWtUcAIPCtPYmjs13jzb0qykCWeWvsQUFIMnSak=",
   },
   {
     key: 3,
     id: 3,
     image:
-      "https://www.alphafoodie.com/wp-content/uploads/2020/11/Orange-Ginger-Juice-1-of-1.jpeg",
+      "https://media.istockphoto.com/photos/natural-pomegranate-juice-in-a-mason-jar-picture-id627762002?k=20&m=627762002&s=612x612&w=0&h=WtS254cb0JFIyx_CwO5qdnwA5cfCWqscXq8eF2d1API=",
   },
   {
     key: 4,

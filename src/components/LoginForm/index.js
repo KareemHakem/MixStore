@@ -20,7 +20,7 @@ const LoginForm = ({ handleLoginSubmit, loading }) => {
             <FormInput
               name="email"
               placeholder="Email"
-              Icon={() => <Icon.EmailIcon style={{ color: "#C9810E" }} />}
+              Icon={() => <Icon.EmailIcon style={{ color: "#000" }} />}
             />
             <FormInput
               name="password"

@@ -1,15 +1,19 @@
 .card_shipping_cart {
-  height: 120px;
+  height: 160px;
   width: 80%;
   margin-left: 10%;
-  color: #fca212 !important;
+  color: #000 !important;
   border-radius: 18px;
-  background-color: #000000;
+  background-color: #fff;
   font-family: "Playfair Display", serif;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset 38px 38px 46px #c5c5c5, inset -38px -38px 46px #fbfbfb;
 }
 
 .card_text_shipping_margin {
-  margin-top: 5px !important;
+  margin-top: 10px !important;
+  margin-left: 10px;
 }
 
 .text_card_shipping {

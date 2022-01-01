@@ -14,9 +14,9 @@ export function RightSideComponents({ handleClear, handleNavigationChickOut }) {
     <div className="right_side_Cart_page">
       <div className="right_side_Cart-components">
         <CardShippingCartPage user={user} userInfo={userInfo} />
-        <div className="line" />
+
         <CardPaymentCartPage product={product} userInfo={userInfo} />
-        {/* <div className="line" /> */}
+
         <CardTotalCartProductPage product={product} />
       </div>
       <div className="right_side_Cart_page-btn">

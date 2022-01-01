@@ -36,10 +36,10 @@
 
 .menu_container {
   display: flex;
-  color: #fca212;
-  background-color: #000;
-  border: 1px solid #fca212;
-  box-shadow: #fca212da 0px 4px 12px;
+  color: #000;
+  background-color: #fff;
+
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 4px 12px;
   justify-content: flex-end;
   align-items: flex-start;
   text-align: start !important;
@@ -64,7 +64,8 @@
 }
 
 .dropdown_item-1 :hover {
-  background-color: #fca212;
-  color: #fff;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 4px 12px;
+  color: #000;
   border-radius: 3px;
 }

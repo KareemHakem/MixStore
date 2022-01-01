@@ -26,24 +26,30 @@ export function CartPage() {
 
   return (
     <div>
-      <CartPageTitle />
-      <div className="full_page_cart">
-        <div className="left_side_cart">
-          {cartItem.map((item) => (
-            <CardItemCartPage
-              item={item}
-              key={item._id}
-              handleRemoveItem={handleRemoveItem}
-            />
-          ))}
-        </div>
+      {isRegister ? (
         <div>
-          <RightSideComponents
-            handleClear={handleClear}
-            handleNavigationChickOut={handleNavigationChickOut}
-          />
+          <CartPageTitle />
+          <div className="full_page_cart">
+            <div className="left_side_cart">
+              {cartItem.map((item) => (
+                <CardItemCartPage
+                  item={item}
+                  key={item._id}
+                  handleRemoveItem={handleRemoveItem}
+                />
+              ))}
+            </div>
+            <div>
+              <RightSideComponents
+                handleClear={handleClear}
+                handleNavigationChickOut={handleNavigationChickOut}
+              />
+            </div>
+          </div>
         </div>
-      </div>
+      ) : (
+        history.push("/")
+      )}
     </div>
   );
 }

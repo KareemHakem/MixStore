@@ -2,14 +2,26 @@ import "./App.css";
 import Navigation from "./Navigation";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-// import { ToastContainer } from "react-toastify";
+import image from "./assets/images/svg.png";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Navigation />
-      <Footer />
+    <div
+      style={{
+        background: `url(${image})`,
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+        objectFit: "cover",
+        width: "100%",
+        height: "100%",
+        Position: "absolute",
+      }}
+    >
+      <div>
+        <NavBar />
+        <Navigation />
+        <Footer />
+      </div>
     </div>
   );
 }

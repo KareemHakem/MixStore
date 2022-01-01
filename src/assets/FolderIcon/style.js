@@ -1,4 +1,4 @@
 export const styleIcon = {
-  color: "#fca212e1",
+  color: "#000",
   fontSize: 24,
 };

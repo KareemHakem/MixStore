@@ -9,39 +9,33 @@
 .right_side_Cart_page-btn {
   display: flex;
   margin-left: 45px;
+  margin-top:50px;
 }
 
 .right_side_Cart_page-btn-btn {
   height: 40px;
-  color: #fff;
+  color: #000;
   border-radius: 23px;
   margin-left: 5px;
-  border: 1.5px solid #fca212e1;
+  border: 1.5px solid #000;
   font-family: "Playfair Display", serif;
   outline: none;
   text-decoration: none;
   cursor: pointer;
   font-size: 15px;
-  background-color: #000;
+  background-color: transparent;
 }
 
 .right_side_Cart_page-btn-btn:hover {
   height: 40px;
-  color: #000;
+  color: #fff;
   border-radius: 23px;
-
+  border: 1px solid #000;
   font-family: "Playfair Display", serif;
   outline: none;
   text-decoration: none;
   cursor: pointer;
   font-size: 15px;
   transition: 1s ease-out;
-  background-color: #fca212e1;
-}
-
-.line {
-  width: 80%;
-  margin-left: 10%;
-  border: 0.25px solid #fca212;
-  margin-top: 35px;
+  background-color: rgba(0, 0, 0, 0.659);
 }

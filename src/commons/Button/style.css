@@ -1,6 +1,6 @@
 .main-button {
   color: #000 !important;
-  background-color: #fca212e1 !important;
+  background-color: rgba(213, 207, 207, 0.646) !important;
   height: 40px;
   width: 280px;
   border-radius: 23px;
@@ -12,10 +12,10 @@
   flex-direction: column;
 
   cursor: pointer;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
   font-family: "Playfair Display", serif;
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
 
 .main-button:hover {
@@ -23,31 +23,32 @@
   outline: none;
   text-decoration: none;
   font-family: "Playfair Display", serif;
-  border: 1.5px solid #fca212e1;
+  border: 1.5px solid #fff;
   cursor: pointer;
   font-size: 15px;
   font-weight: 400;
   transition: 1s ease-out !important;
-  background-color: #000 !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .disabled_button {
-  color: #000 !important ;
-  background-color: #fca2129f;
+  color: #000 !important;
+  background-color: rgba(0, 0, 0, 0.53) !important;
   height: 40px;
   width: 280px;
   border-radius: 23px;
-  font-size: 15px;
-  font-weight: 400;
-  font-weight: bolder;
-  font-family: "Playfair Display", serif;
+  outline: none;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  outline: none;
-  border: 1px solid #0000;
+
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+ 
 }
 
 .common-button {

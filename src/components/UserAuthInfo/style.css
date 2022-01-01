@@ -1,20 +1,10 @@
 .user_info_auth_line {
-  border: 0.5px solid #fca212;
+  border: 0.5px solid #000;
   margin-top: 20px;
   width: 700px;
   margin-top: 15px;
-}
-
-.user_info {
-  margin-top: 10px;
-  height: 30px;
-  width: 250px;
-  font-size: 20px;
-  border-radius: 10px;
-  background-color: #fca212;
-  color: black;
-  margin-left: 10px;
-  font-weight: 600;
+  background: #323232;
+  box-shadow: inset 38px 38px 46px #1d1c1c, inset -38px -38px 46px #292828;
 }
 
 .user_info_auth {
@@ -23,5 +13,5 @@
 }
 
 .user_info_auth_name {
-  color: #fca212;
+  color: #000;
 }

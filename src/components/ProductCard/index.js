@@ -5,6 +5,8 @@ import Button from "../../commons/Button";
 import { useSelector } from "react-redux";
 import "./style.css";
 
+
+
 export default function ProductCard({ Products, item, handleAddCartItem }) {
   const { product } = useSelector((state) => state.productDetail);
 

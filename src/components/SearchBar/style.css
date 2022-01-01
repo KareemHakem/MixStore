@@ -1,18 +1,18 @@
 .input-container {
   padding: 10px;
   width: 400px;
-  border-bottom: 1.5px solid #fca212e1;
-  background-color: #000000 !important;
-  box-shadow: #fca21255 5px 0px 10px;
+  border-bottom: 2px solid #000;
+  background-color: transparent !important;
+  box-shadow: rgba(0, 0, 0, 0.163) 5px 0px 10px;
   display: flex;
   border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .input {
   background-color: transparent !important ;
-  color: #fca212e1 !important;
-  width: 60%;
+  color: #000 !important;
+  width: 100%;
   margin-left: 10px;
   outline: none;
   border: none;

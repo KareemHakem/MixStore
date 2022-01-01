@@ -5,13 +5,13 @@
   text-align: center;
   height: 65px;
   width: 100%;
-  color: #fca212;
+  color: "#000";
   background: rgb(2, 0, 36);
   background: transparent;
   position: absolute;
   top: 0;
   font-family: "Playfair Display", serif;
-  background-color: #000;
+  background-color: rgb(255, 255, 255);
 }
 
 .left_side {
@@ -25,6 +25,8 @@
   height: 70px;
   width: 60px;
   object-fit: contain;
+
+  color: #000 !important;
 }
 
 .logo_name_nav {
@@ -46,7 +48,7 @@
   text-decoration: none;
   font-size: 25px;
   font-weight: 400;
-  color: #fca212 !important;
+  color: #000 !important;
   padding: 5px;
 }
 
@@ -54,17 +56,17 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
-  color: #fca212;
+  color: #000;
   margin-right: 20px;
   padding: 5px;
 }
 
 .link:hover {
-  border-bottom: 1px solid #fca212 !important;
+  border-bottom: 1px solid #000 !important;
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
-  color: #fca212 !important;
+  color: #000 !important;
   padding: 4px;
 }
 
@@ -72,16 +74,16 @@
   text-decoration: none;
   font-size: 25px;
   font-weight: 400;
-  color: #fca212;
+  color: #000;
   margin-left: 10px;
 }
 
 .link_nav_icon .avatar :hover {
-  border-bottom: 1px solid #fca212 !important ;
+  border-bottom: 1px solid #000 !important ;
   text-decoration: none;
   font-size: 25px;
   font-weight: 400;
-  color: #fca212 !important ;
+  color: #000 !important ;
   padding: 4px;
 }
 
@@ -95,7 +97,7 @@
   font-size: 25px !important;
   font-weight: 400 !important;
   background-color: transparent !important;
-  color: #fca212 !important;
+  color: #000 !important;
 }
 
 .menu-DropDown {

@@ -8,7 +8,6 @@ import DropDownUser from "../../components/DropDownUser";
 
 import "./style.css";
 
-
 export default function NavBar() {
   const { isRegister } = useSelector((state) => state.users);
   return (
@@ -17,13 +16,15 @@ export default function NavBar() {
         <Link className="link_Logo" to="/">
           <img className="logo_image_nav" src={Image} alt="logo_image" />
         </Link>
-        <h1 className="logo_name_nav"> Mix Store </h1>
+        <Link className="link_Logo" to="/">
+          <h1 className="logo_name_nav"> Mix Store </h1>
+        </Link>
       </div>
       <div className="right_side">
         <ul className="ul_nav_bar_link">
           <li className="li_nav_bar_link">
             {isRegister ? (
-              < DropDownUser className="menu-DropDown"  />
+              <DropDownUser className="menu-DropDown" />
             ) : (
               <>
                 <Link className="link" to="/logIn">

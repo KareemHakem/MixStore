@@ -1,12 +1,13 @@
 .input_container {
   padding: 10px;
   width: 400px;
-  border: 1.5px solid #fca212e1;
+  border: 1.5px solid #000;
   border-radius: 30px 30px 30px 30px;
-  background-color: #000000 !important;
-  box-shadow: #fca21249 0px 4px 12px;
+  background-color: transparent !important;
   margin: 10px;
   display: flex;
+  background: #e0e0e0;
+  box-shadow: inset 38px 38px 46px #c5c5c5, inset -38px -38px 46px #fbfbfb;
 }
 
 .input {
@@ -19,5 +20,5 @@
 }
 
 .input ::placeholder {
-  color: black !important;
+  color: #ffff !important;
 }

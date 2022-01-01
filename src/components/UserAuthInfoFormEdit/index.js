@@ -20,7 +20,7 @@ export function UserAuthInfoFormEdit({ handleEditUserInfoAuthSubmit }) {
             <FormInput
               name="email"
               placeholder="Email"
-              Icon={() => <EmailIcon style={{ color: "#C9810E" }} />}
+              Icon={() => <EmailIcon style={{ color: "#000" }} />}
             />
             <FormInput
               name="name"

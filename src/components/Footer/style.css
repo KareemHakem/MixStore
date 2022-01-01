@@ -1,13 +1,12 @@
 .footer_for_pages {
   width: 90%;
-  margin-left: 6.5%;
-  height: 40px;
-  position: absolute;
+  margin-left: 5%;
+  height: 100px;
+  margin-top: 40px;
 }
 
 .footer_line {
-  border: 0.5px solid #fca212;
-  margin-top: 20px;
+  border: 0.5px solid #000;
 }
 
 .footer_sides {
@@ -32,8 +31,9 @@
 }
 
 .copy_text {
-  margin-left: 42%;
-  margin-top: 15px;
+  color: #000;
+  margin-left: 457px;
+  margin-bottom: 10px;
 }
 
 .ul_footer_page {
@@ -49,19 +49,19 @@
 .link_footer {
   text-decoration: none;
   margin: 10px;
-  color: #fca212;
+  color: #000;
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 400;
 }
 
 .link_footer:hover {
-  border-bottom: 1px solid #fca212cb;
+  border-bottom: 1px solid #000;
   text-decoration: none;
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 400;
-  color: #fca212cb;
+  color: #000;
   margin: 10px;
 }
 
@@ -69,12 +69,12 @@
   text-decoration: none;
   font-size: 25px;
   font-weight: 400;
-  color: #fca212;
+  color: #000;
   padding: 5px;
 }
 
 .userNameFooter {
   font-size: 20px;
   font-family: "Playfair Display", serif;
-  color: #fca212;
+  color: #000;
 }

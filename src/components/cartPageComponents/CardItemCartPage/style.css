@@ -4,16 +4,17 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 50px;
+  border-radius: 31px;
+  background: #e0e0e0;
+  box-shadow: inset 38px 38px 46px #c5c5c5, inset -38px -38px 46px #fbfbfb;
+  cursor: pointer;
 }
 
 .product_card-cart {
   width: 500px;
   height: 190px;
-  border: 1px solid #fca212;
   border-radius: 20px;
   display: flex;
-  
-  box-shadow: #fca21297 0px 4px 12px;
 }
 
 .text_name_product_cart {
@@ -34,14 +35,14 @@
 .text_name_product_cart h3 {
   font-size: 20px;
   padding: 10px;
-  color: #fca212;
+  color: #000;
   font-family: "Playfair Display", serif;
 }
 
 .text_name_product_cart p {
   font-size: 20px;
   margin-left: 10px;
-  color: #fca212;
+  color: #000;
   font-family: "Playfair Display", serif;
 }
 

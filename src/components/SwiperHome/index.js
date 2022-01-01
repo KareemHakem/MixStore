@@ -29,7 +29,10 @@ const SwiperHome = () => {
         {swiperID.map((swiper) => (
           <SwiperSlide
             key={swiper.id}
-            style={{ opacity: 0.75, backgroundImage: `url(${swiper.image})` }}
+            style={{
+              opacity: " 0.90",
+              backgroundImage: `url(${swiper.image})`,
+            }}
             className="swiper_slider"
           >
             <div className="btn_text_swiper">

@@ -36,7 +36,7 @@ const RegisterForm = ({ handleRegisterSubmit, loading }) => {
             <FormInput
               name="email"
               placeholder="Email"
-              Icon={() => <Icon.EmailIcon style={{ color: "#DE8F10" }} />}
+              Icon={() => <Icon.EmailIcon style={{ color: "#000" }} />}
             />
             <FormInput
               name="password"
